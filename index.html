@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+
+    <!-- local css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="app_body">
+
+        <h1 class="title">Age Calculator <sup>BETA v1.0</sup> </h1>
+        <p class="sub-title">Enter your date of birth</p>
+
+        <div class="input">
+            <div class="block">
+                <p>Enter date</p>
+                <input type="text" name="" id="user_date" placeholder="DD" minlength="1" maxlength="2" required>
+            </div>
+
+            <div class="block">
+                <p>Enter month</p>
+                <input type="text" name="" id="user_month" placeholder="MM" minlength="1" maxlength="2" required>
+            </div>
+
+            <div class="block">
+                <p>Enter year</p>
+                <input type="text" name="" id="user_year" placeholder="YYYY" minlength="4" maxlength="4" required>
+            </div>
+        </div>
+
+        <div class="result"></div>
+
+        <button type="submit" id="calc">Calculate</button>
+    </section>
+</body>
+</html>

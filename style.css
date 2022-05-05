@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    height: 100vh;
+}
+
+
+#app_body{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;;
+}
+
+#app_body .title{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#app_body .title > sup{
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 35px;
+    background-color: orange;
+}
+
+#app_body .sub-title{
+    font-size: 22px;
+    text-align: center;
+}
+
+#app_body .input{
+    display: flex;
+}
+
+.input .block{
+    width: 33%;
+    padding: 15px;
+}
+
+.input .block p{
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.input .block input{
+    width: 100%;
+    padding: 5px;
+    height: 60px;
+    font-size: 20px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 8px;
+}
+
+.input .block input:focus{
+    border: 2px solid blueviolet;
+}
+
+#app_body button{
+    display: block;
+    width: 25%;
+    padding: 10px 0;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+
+/* responsive */
+@media screen and (max-width: 991px) {
+    #app_body{
+        margin: 0 20px;
+    }
+
+    #app_body .title{
+        font-size: 20px;
+    }
+
+    #app_body .title > sup{
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    #app_body .sub-title{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #app_body{
+        padding: 10px;
+    }
+    #app_body .input{
+        display: block;
+    }
+
+    #app_body .input .block{
+        width: 100%;
+    }
+
+    #app_body button{
+        width: 35%;
+    }
+}
+/* responsive end */
